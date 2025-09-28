@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 خطوات خضراء للبدء بها اليوم</title>
+    <!-- Open Graph Meta Tags for Facebook Sharing -->
+    <meta property="og:title" content="ابدأ الآن: 3 خطوات خضراء بسيطة لحياة مستدامة" />
+    <meta property="og:description" content="إنفوجرافيك تفاعلي يوضح ثلاث عادات يومية سهلة ومؤثرة لتقليل بصمتك البيئية وتوفير الطاقة والطعام." />
+    <meta property="og:image" content="https://placehold.co/1200x630/4A6B4C/ffffff?text=Green+Steps+Infographic" />
+    <meta property="og:url" content="https://yourwebsite.com/green_steps" />
+    <meta property="og:type" content="website" />
+    <!-- End Open Graph Tags -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #E4E8D5;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .flow-step {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #7E8D6A;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 3px solid #4A6B4C;
+        }
+        .flow-arrow {
+            font-size: 2.5rem;
+            color: #4A6B4C;
+            margin: 0 1rem;
+            transform: rotate(180deg);
+        }
+        @media (max-width: 767px) {
+            .flow-arrow {
+                transform: rotate(90deg);
+                margin: 1rem 0;
+            }
+        }
+        .stat-card {
+            background-color: #A5AD8C;
+            border-left: 5px solid #4A6B4C;
+        }
+        .rtl-grid {
+            direction: rtl;
+        }
+        .sparkle-button {
+            background-color: #4A6B4C;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+        .sparkle-button:hover {
+            background-color: #7E8D6A;
+            transform: translateY(-2px);
+        }
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #4A6B4C;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+            margin-left: 0.5rem;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="text-[#4A6B4C]">
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-black text-[#4A6B4C] mb-2">🌿 خطواتك الخضراء تبدأ اليوم 🌍</h1>
+            <p class="text-lg md:text-xl text-[#7E8D6A] max-w-3xl mx-auto">دليل بسيط ومؤثر لتبني عادات صديقة للبيئة. تغييرات صغيرة تحدث فرقاً كبيراً.</p>
+        </header>
+
+        <main class="space-y-12">
+            
+            <section id="step1" class="bg-white/70 backdrop-blur-sm rounded-2xl shadow-lg p-6 md:p-8 transition-all duration-300 hover:shadow-2xl">
+                <div class="grid md:grid-cols-2 gap-8 items-center rtl-grid">
+                    <div class="md:pr-8">
+                        <h2 class="text-3xl font-bold mb-4 flex items-center">
+                            <span class="text-5xl ml-4">💡</span>
+                            الخطوة 1: توفير الطاقة الذكي
+                        </h2>
+                        <p class="mb-4 text-gray-700">استهلاك الطاقة المفرط لا يرفع فواتيرك فحسب، بل يزيد أيضاً من بصمتك الكربونية. لكن الحلول بسيطة وفعالة ويمكن تطبيقها فوراً في منزلك.</p>
+                        <div class="space-y-3 text-gray-800">
+                           <p><strong><span class="text-[#4A6B4C] font-bold">● الإضاءة:</span></strong> استبدل المصابيح التقليدية بمصابيح LED الموفرة للطاقة. هي تستهلك طاقة أقل بنسبة تصل إلى 85% وتدوم لفترة أطول بعشرين مرة.</p>
+                           <p><strong><span class="text-[#4A6B4C] font-bold">● الفصل:</span></strong> افصل الشواحن والأجهزة الإلكترونية تماماً من المقبس عند عدم استخدامها. ما يسمى بـ "الطاقة الشبحية" يمكن أن يمثل 10% من فاتورة الكهرباء.</p>
+                        </div>
+
+                        <!-- Gemini Feature 1: Smart Tip Generator -->
+                        <div class="mt-8 pt-4 border-t border-[#A5AD8C]">
+                            <h3 class="text-xl font-bold mb-3 flex items-center text-[#7E8D6A]">
+                                ✨ مولد النصائح الذكية
+                            </h3>
+                            <button class="sparkle-button" onclick="generateEnergyTip()">
+                                احصل على نصيحة توفير جديدة!
+                            </button>
+                            <div id="energyTipOutput" class="mt-4 p-3 bg-[#E4E8D5] rounded-lg text-gray-800 hidden"></div>
+                        </div>
+                    </div>
+                    <div>
+                         <h3 class="text-center text-xl font-bold mb-2 text-[#4A6B4C]">مقارنة استهلاك المصابيح (واط/ساعة)</h3>
+                         <p class="text-center text-sm text-gray-600 mb-4">يوضح الرسم البياني الفارق الكبير في استهلاك الطاقة بين مصابيح LED وغيرها من المصابيح الشائعة لنفس شدة الإضاءة.</p>
+                        <div class="chart-container">
+                            <canvas id="energyChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="step2" class="bg-white/70 backdrop-blur-sm rounded-2xl shadow-lg p-6 md:p-8 transition-all duration-300 hover:shadow-2xl">
+                <div class="grid md:grid-cols-2 gap-8 items-center rtl-grid">
+                     <div>
+                        <h3 class="text-center text-xl font-bold mb-2 text-[#4A6B4C]">المدة الزمنية لتحلل المواد</h3>
+                        <p class="text-center text-sm text-gray-600 mb-4">هذا الرسم يوضح لماذا يشكل البلاستيك تهديداً طويل الأمد للبيئة مقارنة بالمواد الأخرى التي تتحلل بسرعة أكبر.</p>
+                        <div class="chart-container">
+                            <canvas id="plasticChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="md:pl-8">
+                        <h2 class="text-3xl font-bold mb-4 flex items-center">
+                           <span class="text-5xl ml-4">🛍️</span>
+                           الخطوة 2: قول "لا" للبلاستيك
+                        </h2>
+                        <p class="mb-4 text-gray-700">ينتهي المطاف بمليارات الأكياس والعبوات البلاستيكية ذات الاستخدام الواحد في محيطاتنا ومكبات النفايات كل عام، مما يهدد الحياة البرية والبحرية.</p>
+                        <div class="space-y-3 text-gray-800">
+                           <p><strong><span class="text-[#4A6B4C] font-bold">● المياه:</span></strong> استبدل زجاجات المياه البلاستيكية بزجاجة قابلة لإعادة الاستخدام. هذا يوفر المال ويقلل النفايات بشكل هائل.</p>
+                           <p><strong><span class="text-[#4A6B4C] font-bold">● التسوق:</span></strong> احتفظ دائماً بحقيبة تسوق قماشية في سيارتك أو حقيبتك لرفض الأكياس البلاستيكية عند الشراء. </p>
+                        </div>
+                        <div class="mt-6 stat-card p-4 rounded-lg">
+                           <p class="text-4xl font-black text-white text-center">~ 500 مليار</p>
+                           <p class="text-center text-white font-semibold">كيس بلاستيكي يُستخدم حول العالم سنوياً!</p>
+                       </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="step3" class="bg-white/70 backdrop-blur-sm rounded-2xl shadow-lg p-6 md:p-8 transition-all duration-300 hover:shadow-2xl">
+                <div class="grid md:grid-cols-2 gap-8 items-center rtl-grid">
+                    <div class="md:pr-8">
+                        <h2 class="text-3xl font-bold mb-4 flex items-center">
+                            <span class="text-5xl ml-4">🍎</span>
+                            الخطوة 3: ترشيد استهلاك الطعام
+                        </h2>
+                        <p class="mb-4 text-gray-700">يتم هدر ثلث الطعام المنتج عالمياً كل عام. هذا الهدر لا يستنزف الموارد الطبيعية فحسب، بل يساهم أيضاً في انبعاثات غاز الميثان الضار عند تحلله في مكبات النفايات.</p>
+                        <div class="mb-6">
+                            <h3 class="text-xl font-bold text-center mb-4 text-[#4A6B4C]">خطوات بسيطة للحد من هدر الطعام</h3>
+                            <div class="flex flex-col md:flex-row items-center justify-center">
+                                <div class="flow-step"><span>الخطوة 1</span><strong class="text-sm">خطط لوجباتك</strong></div>
+                                <div class="flow-arrow">←</div>
+                                <div class="flow-step"><span>الخطوة 2</span><strong class="text-sm">خزّن بذكاء</strong></div>
+                                <div class="flow-arrow">←</div>
+                                <div class="flow-step"><span>الخطوة 3</span><strong class="text-sm">استخدم البقايا</strong></div>
+                            </div>
+                        </div>
+                        <p class="text-center font-semibold text-gray-800">هذه الدورة البسيطة توفر المال، تحافظ على الموارد، وتقلل من بصمتك البيئية.</p>
+
+                        <!-- Gemini Feature 2: Leftover Recipe Generator -->
+                        <div class="mt-8 pt-4 border-t border-[#A5AD8C]">
+                            <h3 class="text-xl font-bold mb-3 flex items-center text-[#7E8D6A]">
+                                ✨ وصفات البقايا السريعة
+                            </h3>
+                            <p class="text-sm mb-2 text-gray-600">أدخل مكونين أو ثلاثة من بقايا الطعام لديك (مثال: أرز مطبوخ، دجاج مشوي، جزر). وسأقترح عليك وصفة.</p>
+                            <input type="text" id="leftoversInput" placeholder="أدخل المكونات هنا..." class="w-full p-2 mb-3 border border-[#A5AD8C] rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#4A6B4C]">
+                            <button class="sparkle-button" onclick="generateLeftoverRecipe()">
+                                اقترح وصفة لتجنب الهدر
+                            </button>
+                            <div id="recipeOutput" class="mt-4 p-4 bg-[#E4E8D5] rounded-lg text-gray-800 hidden"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-center text-xl font-bold mb-2 text-[#4A6B4C]">مكونات النفايات المنزلية النموذجية</h3>
+                        <p class="text-center text-sm text-gray-600 mb-4">يُظهر الرسم أن المواد العضوية (بقايا الطعام) تشكل الجزء الأكبر من نفاياتنا، مما يسلط الضوء على أهمية الحد منها.</p>
+                        <div class="chart-container h-80 md:h-96">
+                            <canvas id="foodWasteChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="text-center mt-12 pt-8 border-t-2 border-[#A5AD8C]">
+            <p class="font-bold text-xl text-[#4A6B4C]">ابدأ اليوم بخطوة واحدة. كل فعل صغير يساهم في كوكب أكثر صحة.</p>
+            <p class="text-[#7E8D6A] mt-2">إنفوجرافيك تم إنشاؤه لتوضيح قوة العادات اليومية البسيطة، معززاً بالذكاء الاصطناعي من Gemini.</p>
+        </footer>
+    </div>
+
+<script>
+    const apiKey = "";
+    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+    function showLoading(elementId, message) {
+        const outputElement = document.getElementById(elementId);
+        outputElement.innerHTML = `<div class="flex items-center text-[#4A6B4C]"><div class="loader ml-2"></div> ${message}</div>`;
+        outputElement.classList.remove('hidden');
+    }
+
+    function hideLoading(elementId) {
+        const outputElement = document.getElementById(elementId);
+        outputElement.innerHTML = '';
+        outputElement.classList.add('hidden');
+    }
+
+    async function fetchWithRetry(url, options, maxRetries = 5) {
+        let lastError;
+        for (let i = 0; i < maxRetries; i++) {
+            try {
+                const response = await fetch(url, options);
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                return response;
+            } catch (error) {
+                lastError = error;
+                const delay = Math.pow(2, i) * 1000;
+                if (i < maxRetries - 1) await new Promise(resolve => setTimeout(resolve, delay));
+            }
+        }
+        throw lastError;
+    }
+
+    // Feature 1: Energy Tip Generator
+    async function generateEnergyTip() {
+        const outputElementId = 'energyTipOutput';
+        showLoading(outputElementId, 'جاري توليد نصيحة خضراء...');
+
+        const userQuery = "قدم نصيحة سريعة ومبتكرة لتوفير الطاقة في المنزل غير إطفاء المصابيح وفصل الشواحن. يجب أن تكون النصيحة عملية ومفيدة. ابدأ إجابتك بـ 'نصيحتك الخضراء: '";
+        
+        const payload = {
+            contents: [{ parts: [{ text: userQuery }] }],
+            systemInstruction: { parts: [{ text: "أنت خبير في الاستدامة وتقدم نصائح موجزة ومؤثرة باللغة العربية." }] },
+        };
+
+        try {
+            const response = await fetchWithRetry(apiUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+
+            const result = await response.json();
+            const text = result.candidates?.[0]?.content?.parts?.[0]?.text || 'تعذر الحصول على نصيحة، يرجى المحاولة لاحقاً.';
+            
+            document.getElementById(outputElementId).innerHTML = `<p class="font-bold text-[#4A6B4C]">نصيحة Gemini:</p><p>${text.replace('نصيحتك الخضراء: ', '')}</p>`;
+            document.getElementById(outputElementId).classList.remove('hidden');
+
+        } catch (error) {
+            document.getElementById(outputElementId).innerHTML = `خطأ في الاتصال بالذكاء الاصطناعي: ${error.message}.`;
+        }
+    }
+
+    // Feature 2: Leftover Recipe Generator
+    async function generateLeftoverRecipe() {
+        const ingredients = document.getElementById('leftoversInput').value.trim();
+        const outputElementId = 'recipeOutput';
+        
+        if (!ingredients) {
+            document.getElementById(outputElementId).innerHTML = 'الرجاء إدخال مكون واحد على الأقل.';
+            document.getElementById(outputElementId).classList.remove('hidden');
+            return;
+        }
+
+        showLoading(outputElementId, 'جاري البحث عن وصفة لإنقاذ بقايا الطعام...');
+
+        const userQuery = `أعطني وصفة بسيطة وسريعة باستخدام هذه المكونات المتبقية: ${ingredients}. يجب أن تكون الوصفة باللغة العربية.`;
+        
+        const payload = {
+            contents: [{ parts: [{ text: userQuery }] }],
+            generationConfig: {
+                responseMimeType: "application/json",
+                responseSchema: {
+                    type: "OBJECT",
+                    properties: {
+                        "recipeName": { "type": "STRING", "description": "اسم الوصفة المقترحة." },
+                        "ingredients": {
+                            "type": "ARRAY",
+                            "description": "قائمة المكونات المطلوبة.",
+                            "items": { "type": "STRING" }
+                        },
+                        "instructions": {
+                            "type": "ARRAY",
+                            "description": "خطوات تحضير الوصفة.",
+                            "items": { "type": "STRING" }
+                        }
+                    },
+                    "propertyOrdering": ["recipeName", "ingredients", "instructions"]
+                }
+            },
+            systemInstruction: { parts: [{ text: "أنت طاهٍ خبير متخصص في وصفات استخدام البقايا والحد من هدر الطعام. يجب أن تكون جميع المخرجات باللغة العربية." }] }
+        };
+
+        try {
+            const response = await fetchWithRetry(apiUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+
+            const result = await response.json();
+            const jsonText = result.candidates?.[0]?.content?.parts?.[0]?.text;
+            
+            if (!jsonText) {
+                document.getElementById(outputElementId).innerHTML = 'عذراً، لم أتمكن من إيجاد وصفة. هل يمكنك تجربة مكونات مختلفة؟';
+                return;
+            }
+
+            const recipe = JSON.parse(jsonText);
+            
+            let html = `<h4 class="text-xl font-black text-[#4A6B4C] mb-3">${recipe.recipeName || 'وصفة مقترحة'}</h4>`;
+            
+            html += `<p class="font-bold text-[#7E8D6A] mt-4">المكونات:</p><ul class="list-disc pr-5 mt-1 space-y-1">`;
+            (recipe.ingredients || []).forEach(ing => {
+                html += `<li>${ing}</li>`;
+            });
+            html += `</ul>`;
+
+            html += `<p class="font-bold text-[#7E8D6A] mt-4">طريقة التحضير:</p><ol class="list-decimal pr-5 mt-1 space-y-1">`;
+            (recipe.instructions || []).forEach(inst => {
+                html += `<li>${inst}</li>`;
+            });
+            html += `</ol>`;
+
+            document.getElementById(outputElementId).innerHTML = html;
+            document.getElementById(outputElementId).classList.remove('hidden');
+
+        } catch (error) {
+            document.getElementById(outputElementId).innerHTML = `خطأ في معالجة البيانات: ${error.message}. تأكد من أن المكونات واضحة.`;
+        }
+    }
+
+
+    // Chart.js Configuration (Keep existing code)
+    const tooltipTitleCallback = (tooltipItems) => {
+        const item = tooltipItems[0];
+        let label = item.chart.data.labels[item.dataIndex];
+        if (Array.isArray(label)) {
+            return label.join(' ');
+        }
+        return label;
+    };
+
+    const sharedChartOptions = {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                labels: {
+                    font: {
+                        family: 'Cairo',
+                        size: 14
+                    },
+                    color: '#4A6B4C'
+                }
+            },
+            tooltip: {
+                titleFont: { family: 'Cairo', size: 16, weight: 'bold' },
+                bodyFont: { family: 'Cairo', size: 14 },
+                callbacks: {
+                    title: tooltipTitleCallback
+                }
+            }
+        },
+        scales: {
+            x: {
+                ticks: {
+                    font: { family: 'Cairo', size: 12 },
+                    color: '#7E8D6A'
+                },
+                grid: {
+                    display: false
+                }
+            },
+            y: {
+                ticks: {
+                    font: { family: 'Cairo', size: 12 },
+                    color: '#7E8D6A'
+                },
+                grid: {
+                    color: '#CBD2B4'
+                }
+            }
+        }
+    };
+    
+    const energyCtx = document.getElementById('energyChart').getContext('2d');
+    new Chart(energyCtx, {
+        type: 'bar',
+        data: {
+            labels: ['LED', 'فلورسنت مدمج', 'متوهج (تقليدي)'],
+            datasets: [{
+                label: 'استهلاك الطاقة (واط)',
+                data: [10, 20, 75],
+                backgroundColor: ['#4A6B4C', '#7E8D6A', '#A5AD8C'],
+                borderColor: '#E4E8D5',
+                borderWidth: 2,
+                borderRadius: 5
+            }]
+        },
+        options: {
+            ...sharedChartOptions,
+            scales: {
+                ...sharedChartOptions.scales,
+                y: {
+                    ...sharedChartOptions.scales.y,
+                    title: {
+                        display: true,
+                        text: 'واط',
+                        font: { family: 'Cairo', weight: 'bold'},
+                        color: '#4A6B4C'
+                    }
+                }
+            }
+        }
+    });
+
+    const plasticCtx = document.getElementById('plasticChart').getContext('2d');
+    new Chart(plasticCtx, {
+        type: 'bar',
+        data: {
+            labels: ['كيس بلاستيكي', 'زجاجة بلاستيكية', 'علبة ألومنيوم', 'قشرة فاكهة'],
+            datasets: [{
+                label: 'سنوات للتحلل (تقريبي)',
+                data: [20, 450, 200, 0.5],
+                backgroundColor: ['#A5AD8C', '#4A6B4C', '#7E8D6A', '#CBD2B4'],
+                borderColor: '#E4E8D5',
+                borderWidth: 2,
+                borderRadius: 5
+            }]
+        },
+        options: {
+            ...sharedChartOptions,
+            indexAxis: 'y',
+            scales: {
+                 x: {
+                    ...sharedChartOptions.scales.x,
+                    type: 'logarithmic',
+                    title: {
+                        display: true,
+                        text: 'السنوات (مقياس لوغاريتمي)',
+                        font: { family: 'Cairo', weight: 'bold'},
+                        color: '#4A6B4C'
+                    }
+                },
+                y: {
+                   ...sharedChartOptions.scales.y
+                }
+            }
+        }
+    });
+    
+    const foodWasteCtx = document.getElementById('foodWasteChart').getContext('2d');
+    new Chart(foodWasteCtx, {
+        type: 'doughnut',
+        data: {
+            labels: ['بقايا طعام (مواد عضوية)', 'ورق وكرتون', 'بلاستيك', 'زجاج', 'أخرى'],
+            datasets: [{
+                label: 'نسبة النفايات',
+                data: [45, 25, 12, 8, 10],
+                backgroundColor: ['#4A6B4C', '#7E8D6A', '#A5AD8C', '#CBD2B4', '#E4E8D5'],
+                borderColor: '#ffffff',
+                borderWidth: 3,
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+             plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        font: {
+                            family: 'Cairo',
+                            size: 14
+                        },
+                        color: '#4A6B4C'
+                    }
+                },
+                tooltip: {
+                    titleFont: { family: 'Cairo', size: 16, weight: 'bold' },
+                    bodyFont: { family: 'Cairo', size: 14 },
+                    callbacks: {
+                       title: tooltipTitleCallback,
+                       label: function(context) {
+                            let label = context.label || '';
+                            if (label) {
+                                label += ': ';
+                            }
+                            if (context.parsed !== null) {
+                                label += context.parsed + '%';
+                            }
+                            return label;
+                        }
+                    }
+                }
+            }
+        }
+    });
+</script>
+</body>
+</html>
